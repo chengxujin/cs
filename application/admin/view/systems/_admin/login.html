@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>ceshi</title>
+	<style>
+	@keyframes tyreAnimation
+	{
+	0% {transform: rotate(0);left:0px;}
+	100% {transform: rotate(1800deg);left:200px;}
+	}
+
+	@-webkit-keyframes tyreAnimation
+	{
+	0% { -webkit-transform: rotate(0);left:0px;}
+	100% { -webkit-transform: rotate(1800deg);left:200px;}
+	}
+
+	@-moz-keyframes tyreAnimation
+	{
+	0% { -moz-transform: rotate(0);left:0px;}
+	100% { -moz-transform: rotate(1800deg);left:200px;}
+	}
+
+	@-ms-keyframes tyreAnimation
+	{
+	0% { -ms-transform: rotate(0);left:0px;}
+	100% { -ms-transform: rotate(1800deg);left:200px;}
+	}
+	#container
+	{
+		position:relative;
+		width:100%;
+		height:600px;
+		overflow:hidden;
+	}
+	ul li{
+		display:block;
+		width:10px;
+		height:10px;
+		background:blue;
+	}
+	ul li:nth-child(1){
+	    -webkit-animation-name:tyreAnimation;
+	    -webkit-animation-duration:10s;
+	    -webkit-animation-iteration-count:infinite;
+	    -webkit-animation-timing-function:linear;
+
+	    -moz-animation-name:tyreAnimation;
+	    -moz-animation-duration:10s;
+	    -moz-animation-iteration-count:infinite;
+	    -moz-animation-timing-function:linear;
+
+	    -ms-animation-name:tyreAnimation;
+	    -ms-animation-duration:10s;
+	    -ms-animation-iteration-count:infinite;
+	    -ms-animation-timing-function:linear;	    
+
+	    animation-name:tyreAnimation;
+	    animation-duration:10s;
+	    animation-iteration-count:infinite;
+	    animation-timing-function:linear;
+	 }
+	}
+	</style>
+</head>
+<body>
+    <div id="container">
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+    </div>
+</body>
+</html>
